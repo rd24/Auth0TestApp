@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
 import com.auth0.android.Auth0;
 import com.auth0.android.authentication.AuthenticationAPIClient;
 import com.auth0.android.authentication.AuthenticationException;
@@ -47,9 +48,8 @@ public class LogInActivity extends AppCompatActivity {
             credentialsManager.clearCredentials();
 
             //Call logout url in the web browser to Logout as there's a bug in clearCredentials() for the LogOut
-           String url = "https://"+getResources().getString(R.string.com_auth0_domain)+"/v2/logout?federated&returnTo=https://www.google.com/accounts/logout"+"&client_id="+getResources().getString(R.string.com_auth0_client_id);
-
-            Log.e("LOGOUT URL",url);
+            String url = "https://" + getResources().getString(R.string.com_auth0_domain) + "/v2/logout?federated&returnTo=https://www.google.com/accounts/logout" + "&client_id=" + getResources().getString(R.string.com_auth0_client_id);
+           
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(url));
             startActivity(i);
