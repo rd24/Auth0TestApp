@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Auth0TestApp</string>
+
+    <string name="com_auth0_client_id">BcW9rwJm7Ix22taLaOhlzImyM39mzNt5</string>
+    <string name="com_auth0_domain">dev-7v22c8m4.auth0.com</string>
+
+    <string name="login">Log In</string>
+    <string name="logout">Log Out</string>
+    <string name="valid_session_text">Your session is still valid: </string>
+    <string name="request_credentials_title">Authenticate to continue</string>
+</resources>
